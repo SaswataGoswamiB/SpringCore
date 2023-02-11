@@ -5,6 +5,8 @@ public class Person {
 	private String name;
 	
 	private int id;
+	
+	private Certi cer;
 
 	public Person(String name, int id) {
 		super();
@@ -19,7 +21,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return this.name+"::"+this.id;
+		return this.name+"::"+this.id+"::"+this.cer.nameString;
 	}
 
 }

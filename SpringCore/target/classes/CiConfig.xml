@@ -3,12 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:context="http://www.springframework.org/schema/context"
     xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:c="http://www.springframework.org/schema/c"
     xsi:schemaLocation="http://www.springframework.org/schema/beans 
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
         
-        <bean class="com.SpringCore.ci.Person" name="person">
+        <bean class="com.SpringCore.ci.Certi" name="certificate">
+        <constructor-arg>
+        	<value>"Android using Kotlin"</value>
+        </constructor-arg>
+        </bean>
+        
+        <bean class="Com.SpringCore.ci.Person" name="person">
         <constructor-arg>
         	<value>Saswata</value>
         </constructor-arg>
@@ -16,11 +23,21 @@
         <constructor-arg>
         <value>24</value>
         </constructor-arg>
+        
+     	<constructor-arg ref="certificate"></constructor-arg>
         </bean>
         
         <bean class="com.SpringCore.ci.Person" name="person1">
         <constructor-arg value="Arpita"/>
         <constructor-arg value="12" type="int"></constructor-arg>
+        </bean>
+        
+        
+        <!-- Using C schema  -->
+        <!-- You have to add the xlmns: c at fiorst place  -->
+        
+        <bean class ="Com.SpringCore.ci.Certi" name="certificate2" 
+        c:name="Python Programming Langiage" >
         </bean>
         
         </beans>
