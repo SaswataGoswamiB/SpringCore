@@ -31,7 +31,7 @@
         <constructor-arg value="Arpita"/>
         <constructor-arg value="12" type="int"></constructor-arg>
         </bean>
-        
+          
         
         <!-- Using C schema  -->
         <!-- You have to add the xlmns: c at fiorst place  -->
