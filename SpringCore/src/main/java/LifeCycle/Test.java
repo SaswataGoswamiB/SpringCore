@@ -20,6 +20,15 @@ public class Test {
 		//regsiter shut down hook method is used to destry the bean 
 		//as a result of which destroy() method is called.
 		applicationContext.registerShutdownHook();
+		
+		System.out.println("------------------------------------");
+		
+		Pepsi pepsi=(Pepsi)applicationContext.getBean("p1");
+		
+		System.out.println(pepsi);
+		
+		
+	
 
 	}
 
