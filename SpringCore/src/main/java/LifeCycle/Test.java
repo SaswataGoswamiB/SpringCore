@@ -14,7 +14,9 @@ public class Test {
 		
 		//AbstractApplication Context is ued in place of ApplicationContext
 		//because ApplicationContext doesnt have regsitershutdownhook method.
-		AbstractApplicationContext applicationContext = new ClassPathXmlApplicationContext("LifeCycle/CiConfig.xml");
+		
+		AbstractApplicationContext applicationContext =
+				new ClassPathXmlApplicationContext("LifeCycle/CiConfig.xml");
 		Samosa samosa = (Samosa) applicationContext.getBean("s1");
 		System.out.println(samosa);
 		//regsiter shut down hook method is used to destry the bean 

@@ -8,6 +8,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <!-- Thhis is used for activating all the annotations of the Project. -->
+        <context:annotation-config/>
 
 	<!-- Adding the ini-method and destroy-method in the Config file. -->
 	<bean class="LifeCycle.Samosa" name="s1" init-method="init"
@@ -17,6 +20,12 @@
 	
 	<bean class="Lifecycle.Pepsi" name="p1" p:price='56'>
 	
+	</bean>
+	
+	<bean class="LifeCycle.Exam" name="exame">
+	<property name="subjectString">
+		<value>Physics</value>
+	</property>
 	</bean>
 
 </beans>
