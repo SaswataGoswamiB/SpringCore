@@ -9,7 +9,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Com/SpringCore/CiConfig.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("Com/SpringCore/ExplConfig.xml");
 
 		// Person person=(Person) applicationContext.getBean("person");
 
