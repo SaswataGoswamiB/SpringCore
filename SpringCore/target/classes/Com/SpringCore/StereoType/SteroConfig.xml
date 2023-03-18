@@ -12,12 +12,35 @@
         http://www.springframework.org/schema/util 
         http://www.springframework.org/schema/util/spring-util.xsd">
 
-<context:component-scan base-package="Com.SpringCore.StereoType"/>
+<!-- <context:component-scan base-package="Com.SpringCore.StereoType"/>-->
 
+<context:component-scan base-package="Com.SpringCore.StereoType"/>
+<context:annotation-config/>
+
+
+
+<!-- This is where we are inmtiliasing a bean and we get all the iteams that are required for a beasn  -->
 <util:list list-class="java.util.ArrayList" id="subject">
 	<value>DSA</value>
 	<value>Java</value>
 	<value>DataBase</value>
 </util:list>
 
+<util:list list-class="java.util.ArrayList" id="subs">
+<value></value>
+</util:list>
+
+
+<bean name="teacherss" class="Com.SpringCore.StereoType.Teachers"
+ p:nameTecaherString="Saswata" p:empId="111">
+</bean>
+
+<bean name="teachers" class="Com.SpringCore.StereoType.Teachers"
+ p:nameTecaherString="Gos3wami" p:empId="112">
+</bean>
+
+
+<bean class="Com.SpringCore.StereoType.College" name="college" autowire="byName"></bean>
+
+ 
 </beans>

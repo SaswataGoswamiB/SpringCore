@@ -20,6 +20,7 @@ public class Student {
 		super();
 		this.nameString = nameString;
 		this.cityString = cityString;
+		System.out.println("Constructor is being used over here.");
 	}
 
 	public Student() {
@@ -48,6 +49,7 @@ public class Student {
 	}
 
 	public void setCityString(String cityString) {
+		System.out.println("Used for autowiring for City value setting");
 		this.cityString = cityString;
 	}
 

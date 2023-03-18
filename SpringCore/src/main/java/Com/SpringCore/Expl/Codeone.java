@@ -29,7 +29,7 @@ public class Codeone {
 		 Demo d1=applicationContext.getBean("demo",Demo.class);
 		 
 		 System.out.println(d1);
-		p
+		
 		
 	
 	}

@@ -29,7 +29,7 @@ public class Pepsi implements InitializingBean,DisposableBean{
 	}
 
 	
-	//init methid.
+	//init methid. 
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		// TODO Auto-generated method stub

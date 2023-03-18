@@ -11,13 +11,12 @@
          http://www.springframework.org/schema/util 
         http://www.springframework.org/schema/util/spring-util.xsd">
 
+
+<!-- uSED FOR enabling the annotation based Configuration -->
        <context:annotation-config/>
        
-       <!-- Stand Aone Properties. -->
-       <util:properties id="dbconfig">
-       	<prop  key="driver">driver halum</prop>
+       <!-- Stand Alone Properties. -->
        
-       </util:properties>
    	
         
        <bean class="Com.SpringCore.AutoWire.Annotation.Address" name="address1" 
@@ -28,6 +27,6 @@
        
        
        <bean class="Com.SpringCore.AutoWire.Annotation.Employee" name="employee" 
-       p:nameString='Saswata' ref="dbconfig">
+       p:nameString='Saswata'>
        </bean>
 </beans>
