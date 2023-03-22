@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Demo {
 	
+	 String aString="Arpita";
+	
 	@Value("#{11+22}")
 	private int x;
 	
@@ -24,6 +26,37 @@ public class Demo {
 	@Value("#{new java.lang.String('Saswata Goswami')}")
 	private String bString;
 	
+	@Value("#{new java.lang.String('Arpita')}")
+	private String designationString;
+	
+	//how to add  boolean values to a field.
+	@Value("#{4>3}")
+	private boolean employed;
+	
+	public String getaString() {
+		return aString;
+	}
+
+	public void setaString(String aString) {
+		this.aString = aString;
+	}
+
+	public String getDesignationString() {
+		return designationString;
+	}
+
+	public void setDesignationString(String designationString) {
+		this.designationString = designationString;
+	}
+
+	public boolean isEmployed() {
+		return employed;
+	}
+
+	public void setEmployed(boolean employed) {
+		this.employed = employed;
+	}
+
 	public int getX() {
 		return x;
 	}
@@ -68,7 +101,8 @@ public class Demo {
 
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", a=" + a + ", bString=" + bString + "]";
+		return "Demo [aString=" + aString + ", x=" + x + ", y=" + y + ", z=" + z + ", a=" + a + ", bString=" + bString
+				+ ", designationString=" + designationString + ", employed=" + employed + "]";
 	}
 
 	
