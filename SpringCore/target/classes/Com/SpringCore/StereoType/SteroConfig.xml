@@ -31,16 +31,16 @@
 </util:list>
 
 
-<bean name="teacherss" class="Com.SpringCore.StereoType.Teachers"
+<bean name="teachers" class="Com.SpringCore.StereoType.Teachers"
  p:nameTecaherString="Saswata" p:empId="111">
 </bean>
 
-<bean name="teachers" class="Com.SpringCore.StereoType.Teachers"
- p:nameTecaherString="Gos3wami" p:empId="112">
+<bean name="teacherss" class="Com.SpringCore.StereoType.Teachers"
+ p:nameTecaherString="SaswataG" p:empId="112">
 </bean>
 
 
-<bean class="Com.SpringCore.StereoType.College" name="college" autowire="byName"></bean>
+<bean class="Com.SpringCore.StereoType.College" autowire="byName" name="college"></bean>
 
  
 </beans>

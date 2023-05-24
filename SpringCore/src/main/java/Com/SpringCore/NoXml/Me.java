@@ -11,7 +11,7 @@ public class Me {
 	String nameString;
 	
 	@Autowired
-	Travel travel=new Travel();
+	Travel travel;
 
 	public Me() {
 		super();
